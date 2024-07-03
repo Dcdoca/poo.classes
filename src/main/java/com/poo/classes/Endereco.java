@@ -1,11 +1,13 @@
 package com.poo.classes;
 
 public class Endereco {
-String uf;
-String cidade;
-String tipo;
-String logradouro;
-String complemento;
+private String uf;
+private String cidade;
+private String tipo;
+private String logradouro;
+private String complemento;
+private int id_endereco;
+private static int contador = 1 ;
 
 //construtor
 public Endereco(String uf , String cidade , String tipo , String logradouro , String complemento){
@@ -15,6 +17,8 @@ public Endereco(String uf , String cidade , String tipo , String logradouro , St
     this.tipo = tipo;
     this.logradouro = logradouro;
     this.complemento = complemento;
+    this.id_endereco = contador;
+    contador ++ ;
 }
 
 //metodos getters e setters

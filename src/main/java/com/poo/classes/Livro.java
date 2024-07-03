@@ -4,6 +4,8 @@ public class Livro {
 private String edicao;
 private String titulo;
 private int ano;
+private int id_livro;
+private static int contador = 1 ;
 
 //construtor
 public Livro(String edicao , String titulo , int ano ){
@@ -11,6 +13,8 @@ public Livro(String edicao , String titulo , int ano ){
     this.edicao = edicao;
     this.titulo = titulo;
     this.ano = ano;
+    this.id_livro = contador;
+    contador ++ ;
 }
 
 
