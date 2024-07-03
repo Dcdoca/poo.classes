@@ -5,6 +5,15 @@ private String edicao;
 private String titulo;
 private int ano;
 
+//construtor
+public Livro(String edicao , String titulo , int ano ){
+
+    this.edicao = edicao;
+    this.titulo = titulo;
+    this.ano = ano;
+}
+
+
 //metodos getters e setters
 
 public String getEdicao(){

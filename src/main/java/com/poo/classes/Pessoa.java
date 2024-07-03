@@ -5,6 +5,19 @@ private String rg;
 private String cpf;
 private String nome;
 private String endereco;
+private int id_pessoa;
+private static int contador = 1 ;
+
+//construtor
+public Pessoa(String nome , String rg , String cpf , String endereco){
+
+    this.nome = nome;
+    this.rg = rg;
+    this.cpf = cpf;
+    this.endereco = endereco;
+    this.id_pessoa = contador;
+    contador ++ ;
+}
 
 
 
@@ -43,3 +56,4 @@ public void exibirInformacoes(){
 }
 
 }
+
