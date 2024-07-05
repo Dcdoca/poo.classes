@@ -1,6 +1,6 @@
 package com.poo.classes;
 
-public class Pessoa {
+public abstract class  Pessoa {
 private String rg;
 private String cpf;
 private String nome;
@@ -17,6 +17,12 @@ public Pessoa(String nome , String rg , String cpf , String endereco){
     this.endereco = endereco;
     this.id_pessoa = contador;
     contador ++ ;
+}
+
+
+
+public Pessoa(String nome2, String cpf2, String rg2) {
+    //TODO Auto-generated constructor stub
 }
 
 
