@@ -36,7 +36,7 @@ package com.poo.classes;
         
             }
         
-            public boolean Autentica (String login,String senha) {
+            public boolean autentica (String login,String senha) {
                return this.login.equals(login) && this.senha.equals(senha);
             }
             Funcionario funcionario;

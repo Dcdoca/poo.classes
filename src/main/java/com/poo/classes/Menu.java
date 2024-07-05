@@ -5,7 +5,6 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Menu {
-    class Sistema {
     private List<Funcionario> funcionarios;
 
     public Sistema() {
@@ -44,7 +43,7 @@ public class Menu {
         for (Funcionario funcionario : funcionarios) {
             if (funcionario.autentica(login, senha)) {
                 if (funcionario instanceof Gerente) {
-                    System.out.println(funcionario.imprimeContraCheque());
+                    funcionario.imprimeContraCheque();
                 } else {
                     System.out.println("Apenas gerentes podem acessar esta área.");
                 }
@@ -55,10 +54,10 @@ public class Menu {
     }
 
     public static void main(String[] args) {
-        Sistema sistema = new Sistema();
+        Sistema menu = new menu();
         sistema.menu();
     }
 }
 
 
-}
+
