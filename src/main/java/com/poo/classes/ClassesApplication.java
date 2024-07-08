@@ -8,6 +8,8 @@ public class ClassesApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(ClassesApplication.class, args);
+		Menu menu = new Menu();
+		menu.menu();
 	}
 
 }

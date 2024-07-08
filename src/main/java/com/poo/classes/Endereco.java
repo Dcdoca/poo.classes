@@ -21,6 +21,10 @@ public Endereco(String uf , String cidade , String tipo , String logradouro , St
     contador ++ ;
 }
 
+public Endereco() {
+    //TODO Auto-generated constructor stub
+}
+
 //metodos getters e setters
 public String getUf(){
     return uf;

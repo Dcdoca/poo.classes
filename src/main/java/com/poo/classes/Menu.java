@@ -7,10 +7,10 @@ import java.util.Scanner;
 public class Menu {
     private List<Funcionario> funcionarios;
 
-    public Sistema() {
+    public void Sistema() {
         funcionarios = new ArrayList<>();
-        funcionarios.add(new Gerente("Alice", 40, 12000, "alice_gerente", "12345"));
-        funcionarios.add(new Atendente("Bob", 25, 3000, "bob_atendente", "67890"));
+        funcionarios.add(new Gerente("Alice", "121123454" , "23345673", new Endereco(), "alice_gerente", "12345"));
+        funcionarios.add(new Atendente("Bob", "123546765" ,"3000344",new Endereco(), "bob_atendente", "67890"));
     }
 
     public void menu() {
@@ -53,11 +53,9 @@ public class Menu {
         System.out.println("Login ou senha inválidos.");
     }
 
-    public static void main(String[] args) {
-        Sistema menu = new menu();
-        sistema.menu();
+    
     }
-}
+
 
 
 
